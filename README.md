@@ -9,3 +9,19 @@
 
 > https://download.vulnhub.com/crossroads/crossroads_vh.ova
 ## การสร้าง Folder 
+> สร้าง Folder ที่ไว้จัดเก็บ file สามารถเลือกสร้างไว้ที่ใดก็ได้ แต่ในตัวอย่างจะเป็นการจัดเก็บไว้ที่ส่วนของ Desktop 
+
+```
+  $ sudo su
+  # cd Desktop
+  # mkdir crossroads
+```
+![image](https://user-images.githubusercontent.com/87358973/211530778-b7979e1d-da40-41d0-9aae-d0d95c6ee699.png)
+
+# 1.	Identify the target : ระบุเป้าหมาย
+> ใช้คำสั่ง netdiscover เพื่อตรวจสอบ Mac Address ทุกเครื่องในระบบเครือข่าย เพื่อค้นหาเป้าหมายที่เราต้องการ
+```
+# netdiscover
+# netdiscover -i eth0 
+```
+![image](https://user-images.githubusercontent.com/87358973/211531820-ea77535d-2c0c-4a4b-bc1b-be6d56e98544.png)
